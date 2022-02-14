@@ -1,0 +1,129 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 84px;
+  border-bottom: 2px solid #c81523;
+}
+.logo {
+  padding-top: 18px;
+}
+.registerarea {
+  height: 522px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.registerarea .top {
+  height: 42px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ececec;
+  line-height: 42px;
+  padding: 0 15px;
+}
+.registerarea .top h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.login {
+  float: right;
+  font-size: 14px;
+}
+.login a {
+  color: #c81523;
+}
+.reg_form {
+  width: 600px;
+  margin: 50px auto;
+}
+.reg_form ul li {
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.reg_form ul li label {
+  display: inline-block;
+  width: 88px;
+  text-align: right;
+}
+.reg_form ul li:nth-child(-n + 5) input {
+  width: 242px;
+  height: 37px;
+  text-indent: 1em;
+  border: 1px solid #ccc;
+}
+.error {
+  color: #c81523;
+}
+.error_icon,
+.success_icon {
+  display: inline-block;
+  /* /////////////////////////////////////////////////////////////////////////////////////////图片和文字水平对齐 */
+  vertical-align: middle;
+  margin: -2px 1px 0 15px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/error.png) no-repeat;
+}
+.success {
+  color: green;
+}
+.success_icon {
+  margin-top: -3px;
+  background: url(../images/success.png) no-repeat;
+  background-size: 100% 100%;
+}
+.safe {
+  padding-left: 145px;
+}
+.safe em {
+  padding: 0 12px;
+}
+.ruo,
+.zhong,
+.qiang {
+  color: white;
+  font-size: 12px;
+}
+.ruo {
+  background-color: red;
+}
+.zhong {
+  background-color: orange;
+}
+.qiang {
+  background-color: green;
+}
+.agree {
+  padding-left: 85px;
+}
+.agree input {
+  vertical-align: middle;
+}
+.agree a {
+  color: #1ba1e6;
+}
+.btn {
+  width: 200px;
+  height: 34px;
+  background-color: #c81623;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin: 1px 1px 1px 110px;
+}
+.footer {
+  height: 500px;
+  background-color: #f5f5f5;
+}
+.mod_copyright {
+  text-align: center;
+  padding-top: 20px;
+}
+.links {
+  margin-bottom: 10px;
+}
+.links a {
+  padding: 0 10px;
+}
+.copyright {
+  line-height: 20px;
+}
