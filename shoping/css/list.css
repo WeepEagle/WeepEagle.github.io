@@ -1,0 +1,79 @@
+/* 列表页专有的样式 */
+.nav {
+    overflow: hidden;
+    /* 溢出隐藏 */
+}
+.sk {
+  position: absolute;
+  top: 40px;
+  left: 190px;
+  padding: 3px 0 0 14px;
+  border-left: 1px solid #c81523;
+}
+.sk_list {
+  float: left;
+}
+.sk_list ul li {
+  float: left;
+}
+.sk_list ul li a {
+  display: block;
+  line-height: 47px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+.sk_list ul li a:hover {
+  color: #c81523;
+}
+.sk_con {
+  float: left;
+}
+.sk_con ul li {
+  float: left;
+}
+.sk_con ul li a {
+  position: relative;
+  display: block;
+  line-height: 49px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+/* .........................................................................................................................................最后一个li里面的a */
+.sk_con ul li:last-child a::after {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  content: "\ee91";
+  font-family: "icomoon";
+  font-size: 18px;
+}
+.sk_hd {
+    position: relative;
+}
+.sk_hd i {
+    position: absolute;
+    top: -3px;
+    right: 570px;
+    font-family: "icomoon";
+    font-size: 60px;
+    color: #b1191a;
+}
+.sk_bd {
+    margin-top: 13px;
+}
+.sk_bd ul li {
+    float: left;
+    margin: 0 13px 13px 0;
+    width: 290px;
+    height: 460px;
+    background-color: #909090;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin: 0 0 13px 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
