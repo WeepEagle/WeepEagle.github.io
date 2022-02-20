@@ -267,13 +267,13 @@ div {
 }
 .footer .app_m {
   position: fixed;
-  bottom: 50%;
-  left: 50%;
-  margin: 0 0 -357px 96px;
+  bottom: 20%;
+  right: 20%;
+  /* margin: 0 0 -241px 52px; */
   width: 100px;
   height: 50px;
   line-height: 50px;
-  padding: 0px 15px 0px 15px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.582);
   border-radius: 10px;
 }
