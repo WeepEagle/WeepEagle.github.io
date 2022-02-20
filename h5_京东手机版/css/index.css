@@ -1,0 +1,267 @@
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 14px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #666;
+  /* background-color: #ccc; */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  /* 清除上图与下图之间的缝隙 */
+  vertical-align: top;
+}
+div {
+  box-sizing: border-box;
+}
+.app {
+  height: 45px;
+}
+.app ul li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  background-color: rgb(35, 35, 38);
+  text-align: center;
+  color: white;
+}
+.app ul li:nth-child(1) {
+  width: 8%;
+}
+.app ul li:nth-child(1) img {
+  width: 15px;
+  /* 图片和文字居中对齐 */
+  vertical-align: middle;
+}
+.app ul li:nth-child(2) img {
+  width: 30px;
+  vertical-align: middle;
+}
+.app ul li:nth-child(2) {
+  width: 10%;
+}
+.app ul li:nth-child(3) {
+  width: 57%;
+}
+.app ul li:nth-child(4) {
+  width: 25%;
+  background-color: rgb(205, 37, 37);
+}
+/* 搜索 */
+.search-wrap {
+  overflow: hidden;
+  /* 第一次用固定定位 */
+  position: fixed;
+  /* top: 0; */
+  /* 给个宽度 */
+  width: 100%;
+  height: 44px;
+  min-width: 320px;
+  max-width: 640px;
+}
+.search-btn,
+.search-login {
+  width: 40px;
+  height: 44px;
+}
+.search-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: #12a212; */
+}
+.search-btn::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 18px;
+  background-image: url(../images/san.png);
+  background-size: 100% 100%;
+  margin: 14px 0 0 15px;
+}
+.search-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background-color: #7be01d; */
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+}
+.search {
+  position: relative;
+  height: 30px;
+  background-color: #fff;
+  margin: 7px 50px;
+  border-radius: 15px;
+}
+.jd-icon {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  width: 20px;
+  height: 15px;
+  background: url(../images/jd.png);
+  background-size: 100% 100%;
+}
+.jd-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #ccc;
+}
+.sou {
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  width: 18px;
+  height: 15px;
+  background-color: #bbb;
+  /* 二倍精灵图的制作和使用 */
+  /* 先缩放精灵图,再定位元素 */
+  background: url(../images/jd-sp.png) -81px 0px;
+  background-size: 200px;
+}
+.slider img {
+  width: 100%;
+}
+.brand {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.brand div {
+  float: left;
+  width: 50%;
+}
+.brand div img {
+  width: 100%;
+}
+.nav a {
+  float: left;
+  width: 20%;
+  /* 图片,文字居中对齐 */
+  text-align: center;
+}
+.nav a img {
+  width: 40px;
+  margin: 15px 0 5px 0;
+}
+.news {
+  margin: 180px 0 0 0;
+}
+.news a {
+  box-sizing: border-box;
+  float: left;
+  height: 200px;
+}
+.news a:nth-child(1) {
+  width: 50%;
+  border-right: 1px solid #ccc;
+}
+.news a:nth-child(2) {
+  width: 25%;
+  border-right: 1px solid #ccc;
+}
+.news a:nth-child(3) {
+  width: 25%;
+}
+.news a img {
+  width: 100%;
+  height: 100%;
+}
+.win a {
+  width: 48%;
+  height: 330px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* .win a {
+    padding: 1px;
+} */
+.win a:nth-child(2n-1) {
+  float: left;
+}
+.win a:nth-child(2n) {
+  float: right;
+}
+.win a img {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  height: 50px;
+  background-color: #fff;
+}
+.footer div {
+  float: left;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  /* background-color: rgb(161, 94, 94); */
+}
+.footer div a {
+  display: inline-block;
+  width: 25px;
+  height: 50px;
+  background-color: rgb(16, 187, 24);
+}
+.footer div:nth-child(1) a {
+  background: url(../images/d-1.png);
+  background-size: 100% 100%;
+}
+.footer div:nth-child(2) a {
+    background: url(../images/d-2.png);
+    background-size: 100% 100%;
+  }
+  .footer div:nth-child(3) a {
+    width: 28px;
+    background: url(../images/d-3.png);
+    background-size: 100% 100%;
+  }
+  .footer div:nth-child(4) a {
+    width: 30px;
+    background: url(../images/d-4.png);
+    background-size: 100% 100%;
+  }
+  .footer div:nth-child(5) a {
+    width: 32px;
+    background: url(../images/d-5.png);
+    background-size: 100% 100%;
+  }
