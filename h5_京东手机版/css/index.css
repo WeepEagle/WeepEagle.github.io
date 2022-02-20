@@ -228,7 +228,7 @@ div {
   height: 50px;
   background-color: #fff;
 }
-.footer div {
+.footer div:nth-child(-n+5) {
   float: left;
   width: 20%;
   height: 100%;
@@ -240,28 +240,46 @@ div {
   display: inline-block;
   width: 25px;
   height: 50px;
-  background-color: rgb(16, 187, 24);
+  /* background-color: rgb(16, 187, 24); */
 }
 .footer div:nth-child(1) a {
   background: url(../images/d-1.png);
   background-size: 100% 100%;
 }
 .footer div:nth-child(2) a {
-    background: url(../images/d-2.png);
-    background-size: 100% 100%;
-  }
-  .footer div:nth-child(3) a {
-    width: 28px;
-    background: url(../images/d-3.png);
-    background-size: 100% 100%;
-  }
-  .footer div:nth-child(4) a {
-    width: 30px;
-    background: url(../images/d-4.png);
-    background-size: 100% 100%;
-  }
-  .footer div:nth-child(5) a {
-    width: 32px;
-    background: url(../images/d-5.png);
-    background-size: 100% 100%;
-  }
+  background: url(../images/d-2.png);
+  background-size: 100% 100%;
+}
+.footer div:nth-child(3) a {
+  width: 28px;
+  background: url(../images/d-3.png);
+  background-size: 100% 100%;
+}
+.footer div:nth-child(4) a {
+  width: 30px;
+  background: url(../images/d-4.png);
+  background-size: 100% 100%;
+}
+.footer div:nth-child(5) a {
+  width: 32px;
+  background: url(../images/d-5.png);
+  background-size: 100% 100%;
+}
+.footer .app_m {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  margin: 0 0 -357px 96px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 15px 0px 15px;
+  background-color: rgba(0, 0, 0, 0.582);
+  border-radius: 10px;
+}
+.footer .app_m a {
+  display: inline;
+  font-size: 14px;
+  color: white;
+
+}
