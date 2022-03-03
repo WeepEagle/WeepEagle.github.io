@@ -1,538 +1,507 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>品优购-正品低价、品质保障、配送及时、轻松购物！</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
-    />
-    <meta
-      name="description"
-      content="品优购商城-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"
-    />
-    <meta
-      name="Keywords"
-      content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜"
-    />
-    <!-- https://www.bitbug.net/ -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+    <style>
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+      /* Document
+   ========================================================================== */
+
+      /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+      html {
+        line-height: 1.15; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+      }
+
+      /* Sections
+     ========================================================================== */
+
+      /**
+   * Remove the margin in all browsers.
+   */
+
+      body {
+        margin: 0;
+      }
+
+      /**
+   * Render the `main` element consistently in IE.
+   */
+
+      main {
+        display: block;
+      }
+
+      /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      /* Grouping content
+     ========================================================================== */
+
+      /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+      hr {
+        box-sizing: content-box; /* 1 */
+        height: 0; /* 1 */
+        overflow: visible; /* 2 */
+      }
+
+      /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+      pre {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      /* Text-level semantics
+     ========================================================================== */
+
+      /**
+   * Remove the gray background on active links in IE 10.
+   */
+
+      a {
+        background-color: transparent;
+      }
+
+      /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+      abbr[title] {
+        border-bottom: none; /* 1 */
+        text-decoration: underline; /* 2 */
+        text-decoration: underline dotted; /* 2 */
+      }
+
+      /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+      b,
+      strong {
+        font-weight: bolder;
+      }
+
+      /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+      code,
+      kbd,
+      samp {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      /**
+   * Add the correct font size in all browsers.
+   */
+
+      small {
+        font-size: 80%;
+      }
+
+      /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      /* Embedded content
+     ========================================================================== */
+
+      /**
+   * Remove the border on images inside links in IE 10.
+   */
+
+      img {
+        border-style: none;
+      }
+
+      /* Forms
+     ========================================================================== */
+
+      /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit; /* 1 */
+        font-size: 100%; /* 1 */
+        line-height: 1.15; /* 1 */
+        margin: 0; /* 2 */
+      }
+
+      /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+      button,
+      input {
+        /* 1 */
+        overflow: visible;
+      }
+
+      /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+      button,
+      select {
+        /* 1 */
+        text-transform: none;
+      }
+
+      /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+
+      /**
+   * Remove the inner border and padding in Firefox.
+   */
+
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      /**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+      button:-moz-focusring,
+      [type="button"]:-moz-focusring,
+      [type="reset"]:-moz-focusring,
+      [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      /**
+   * Correct the padding in Firefox.
+   */
+
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+
+      /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+      legend {
+        box-sizing: border-box; /* 1 */
+        color: inherit; /* 2 */
+        display: table; /* 1 */
+        max-width: 100%; /* 1 */
+        padding: 0; /* 3 */
+        white-space: normal; /* 1 */
+      }
+
+      /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+      textarea {
+        overflow: auto;
+      }
+
+      /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+      [type="checkbox"],
+      [type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+      }
+
+      /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+      [type="number"]::-webkit-inner-spin-button,
+      [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+      [type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        outline-offset: -2px; /* 2 */
+      }
+
+      /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+      [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button; /* 1 */
+        font: inherit; /* 2 */
+      }
+
+      /* Interactive
+     ========================================================================== */
+
+      /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+      details {
+        display: block;
+      }
+
+      /*
+   * Add the correct display in all browsers.
+   */
+
+      summary {
+        display: list-item;
+      }
+
+      /* Misc
+     ========================================================================== */
+
+      /**
+   * Add the correct display in IE 10+.
+   */
+
+      template {
+        display: none;
+      }
+
+      /**
+   * Add the correct display in IE 10.
+   */
+
+      [hidden] {
+        display: none;
+      }
+
+      /* 自己新加的4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 */
+
+      a {
+        -webkit-tap-highlight-color: transparent;
+        /* 清除手机端点击高亮显示 */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      input {
+        -webkit-appearance: none;
+        /* 系统提示避免使用 */
+      }
+
+      a,
+      img {
+        -webkit-touch-callout: none;
+        /* 系统提示避免使用 */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: #fdfdfd;
+      }
+      body {
+        max-width: 540px;
+        min-width: 319.9988px;
+        margin: 0 auto;
+        font: normal 13.9988px/1.5 consolas;
+        color: #000;
+        background: linear-gradient(
+          to right,
+          rgb(153, 230, 255),
+          rgb(153, 230, 255),
+          rgb(153, 125, 255)
+        );
+        overflow-x: hidden;
+        /* 系统不建议使用 */
+        -webkit-tap-highlight-color: transparent;
+      }
+      section {
+        max-width: 540px;
+        min-width: 319.9988px;
+        width: 100%;
+        height: 1000px;
+      }
+      div {
+        display: flex;
+        width: 100%;
+        height: 100.0012px;
+      }
+      a {
+        flex: 1;
+        position: relative;
+        border-radius: 10.0012px;
+        margin: 4.9988px 7.9987px;
+        padding: 10.0012px;
+        background: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.1)
+        );
+        backdrop-filter: blur(7.9987px);
+        box-shadow: 10.0012px 10.0012px 19.9988px rgba(0, 0, 0, 0.137);
+        border-top: 1.0012px solid rgba(255, 255, 255, 0.651);
+        border-left: 1.0012px solid rgba(255, 255, 255, 0.651);
+        /* opacity: 0.8; */
+      }
+      p {
+        position: absolute;
+        top: 19.9988px;
+        left: 19.9988px;
+        font-size: 19.9988px;
+      }
+      span {
+        position: absolute;
+        bottom: 1.9988px;
+        right: 6px;
+        font-size: 12px;
+      }
+    </style>
   </head>
-
   <body>
-    <!-- common_head_start -->
-    <div class="common_head">
-      <!-- 快捷导航模块 start-->
-      <section class="shortcut">
-        <div class="w">
-          <div class="fl">
-            <ul>
-              <li>品优购欢迎您 ！&nbsp;</li>
-              <li>
-                <a href="#"> 请登录 </a> &nbsp;
-                <a href="register.html" class="style_red"> 免费注册 </a>
-              </li>
-            </ul>
-          </div>
-          <div class="fr">
-            <ul>
-              <li>我的订单</li>
-              <li></li>
-              <li class="arrow-icon">我的品优购</li>
-              <li></li>
-              <li>品优购会员</li>
-              <li></li>
-              <li>企业采购</li>
-              <li></li>
-              <li class="arrow-icon">关注品优购</li>
-              <li></li>
-              <li class="arrow-icon">客户服务</li>
-              <li></li>
-              <li class="arrow-icon">网站导航</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- 快捷导航模块 end -->
-      <!-- header头部模块 start -->
-      <header class="header w">
-        <!-- logo SEO 优化 的制作,重要 -->
-        <div class="logo">
-          <h1><a href="index.html" title="品优购商城">品优购商城</a></h1>
-        </div>
-        <!-- search搜索模块 -->
-        <div class="search">
-          <input type="search" name="" id="" placeholder="iPhoneXR" />
-          <button>搜索</button>
-        </div>
-        <!-- hotwords模块制作 -->
-        <div class="hotwords">
-          <a href="#" class="style_red">优惠购首发</a>
-          <a href="#">亿元优惠</a>
-          <a href="#">9.9元团购</a>
-          <a href="#">每满99减30</a>
-          <a href="#">办公用品</a>
-          <a href="#">电脑</a>
-          <a href="#">通信</a>
-        </div>
-        <!-- 购物车模块 -->
-        <div class="shopcar">
-          <a href="#">我的购物车</a>
-          <i class="count">56</i>
-        </div>
-      </header>
-      <!-- header头部模块 end -->
-      <!-- nav模块 start -->
-      <nav class="nav">
-        <div class="w">
-          <div class="dropdown">
-            <dt>全部商品分类</dt>
-            <dd>
-              <ul>
-                <li><a href="#">家用电器</a></li>
-                <li>
-                  <a href="list.html">手机</a>、<a href="#">数码</a>、
-                  <a href="#">通讯</a>
-                </li>
-
-                <li>
-                  <a href="#">电脑</a>、
-                  <a href="#">办公</a>
-                </li>
-
-                <li>
-                  <a href="#">家居</a>、<a href="#">家具</a>、
-                  <a href="#">家装</a>、
-                  <a href="#">厨具</a>
-                </li>
-
-                <li>
-                  <a href="#">男装</a>、<a href="#">女装</a>、
-                  <a href="#">童装</a>、
-                  <a href="#">内衣</a>
-                </li>
-                <li>
-                  <a href="#">个户化妆</a>、<a href="#">清洁用品</a>、
-                  <a href="#">宠物</a>
-                </li>
-                <li>
-                  <a href="#">鞋靴</a>、<a href="#">箱包</a>、
-                  <a href="#">珠宝</a>、
-                  <a href="#">奢侈品</a>
-                </li>
-                <li>
-                  <a href="#">运动户外</a>、
-                  <a href="#">钟表</a>
-                </li>
-                <li>
-                  <a href="#">汽车</a>、
-                  <a href="#">汽车用品</a>
-                </li>
-                <li>
-                  <a href="#">母婴</a>、
-                  <a href="#">玩具乐器</a>
-                </li>
-                <li>
-                  <a href="#">食品</a>、<a href="#">酒类</a>、
-                  <a href="#">生鲜</a>、
-                  <a href="#">特产</a>
-                </li>
-                <li>
-                  <a href="#">医药保健</a>
-                </li>
-                <li>
-                  <a href="#">图书</a>、<a href="#">音像</a>、
-                  <a href="#">电子书</a>
-                </li>
-                <li>
-                  <a href="#">彩票</a>、<a href="#">旅行</a>、
-                  <a href="#">充值</a>、
-                  <a href="#">票务</a>
-                </li>
-                <li>
-                  <a href="#">理财</a>、<a href="#">众筹</a>、
-                  <a href="#">白条</a>、
-                  <a href="#">保险</a>
-                </li>
-              </ul>
-            </dd>
-          </div>
-          <div class="navitems">
-            <ul>
-              <li><a href="#">服装城</a></li>
-              <li><a href="#">美妆馆</a></li>
-              <li><a href="#">传智超市</a></li>
-              <li><a href="#">全球购</a></li>
-              <li><a href="#">闪购</a></li>
-              <li><a href="#">团购</a></li>
-              <li><a href="#">拍卖</a></li>
-              <li><a href="#">有趣</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- nav模块 end -->
-    </div>
-    <!-- common_head_end -->
-
-    <!-- 首页专有模块 start -->
-    <div class="w">
-      <div class="main">
-        <div class="focus">
-          <ul>
-            <li><img src="upload/focus1.png" alt="" /></li>
-          </ul>
-        </div>
-        <div class="newflash">
-          <div class="news">
-            <div class="news_hd">
-              <h5>品优购快报</h5>
-              <a href="#" class="more">更多</a>
-            </div>
-            <div class="news_bd">
-              <ul>
-                <li>
-                  <a href="#">
-                    <strong>【特惠】</strong
-                    >苹果电脑降价了官方电话发的规划法规回复的回复</a
-                  >
-                </li>
-                <li>
-                  <a href="#"> <strong>【特惠】</strong>苹果电脑降价了</a>
-                </li>
-                <li>
-                  <a href="#"> <strong>【特惠】</strong>苹果电脑降价了</a>
-                </li>
-                <li>
-                  <a href="#"> <strong>【特惠】</strong>苹果电脑降价了</a>
-                </li>
-                <li>
-                  <a href="#"> <strong>【特惠】</strong>苹果电脑降价了</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="lifeservice">
-            <div class="jian"></div>
-            <ul>
-              <li>
-                <i></i>
-                <p>话费</p>
-              </li>
-              <li>
-                <i></i>
-                <p>机票</p>
-              </li>
-              <li>
-                <i></i>
-                <p>电影票</p>
-              </li>
-              <li>
-                <i></i>
-                <p>游戏</p>
-              </li>
-              <li>
-                <i></i>
-                <p>彩票</p>
-              </li>
-              <li>
-                <i></i>
-                <p>加油卡</p>
-              </li>
-              <li>
-                <i></i>
-                <p>酒店</p>
-              </li>
-              <li>
-                <i></i>
-                <p>火车票</p>
-              </li>
-              <li>
-                <i></i>
-                <p>众筹</p>
-              </li>
-              <li>
-                <i></i>
-                <p>理财</p>
-              </li>
-              <li>
-                <i></i>
-                <p>礼品卡</p>
-              </li>
-              <li>
-                <i></i>
-                <p>白条</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bargain">
-            <img src="upload/bargain.png" alt="" />
-          </div>
-        </div>
+    <section>
+      <div>
+        <a href="shoping/index.html">
+          <p>品优购</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
+        <a href="study/index.html">
+          <p>学成在线</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
       </div>
-    </div>
-    <!-- 首页专有模块 end -->
-    <!-- 今日推荐模块 start -->
-    <div class="w recom">
-      <div class="recom_hd">
-        <a href="#"><img src="upload/recom.png" alt="" /></a>
+      <div>
+        <a href="h5_京东手机版/index.html">
+          <p>京东手机版</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
+        <a href="h5_携程手机版/index.html">
+          <p>携程网</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
       </div>
-      <div class="recom_bd">
-        <ul>
-          <li>
-            <a href="#"><img src="upload/logo1.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="upload/logo2.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="upload/logo3.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="upload/logo4.png" alt="" /></a>
-          </li>
-        </ul>
+      <div>
+        <a href="h5_苏宁手机版/index.html">
+          <p>苏宁易购</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
+        <a href="黑马面面/index.html">
+          <p>黑马面面</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
       </div>
-    </div>
-    <!-- 今日推荐模块 end -->
-    <!-- 楼层区域制作 start -->
-    <div class="floor">
-
-      <!-- 1楼 start -->
-      <div class="w floor_1">
-        <div class="box_hd">
-          <h3>家用电器</h3>
-          <div class="tab_list">
-            <ul>
-              <li><a href="#" class="style_red">热门</a>|</li>
-              <li><a href="#">大家电</a>|</li>
-              <li><a href="#">生活电器</a>|</li>
-              <li><a href="#">厨房电器</a>|</li>
-              <li><a href="#">个护健康</a>|</li>
-              <li><a href="#">应季电器</a>|</li>
-              <li><a href="#">空气/净水</a>|</li>
-              <li><a href="#">新奇特</a>|</li>
-              <li><a href="#">高端电器</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box_bd">
-          <div class="tab_content">
-            <div class="tab_list_item">
-              <div class="col_210">
-                <ul>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                </ul>
-                <a href="#"><img src="upload/floor-1-1.png" alt=""></a>
-              </div>
-              <div class="col_329"><a href="#"><img src="upload/floor-1-2.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-3.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-4.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-5.png" alt=""></a></div>
-              <div class="col_219"><a href="#"><img src="upload/floor-1-6.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-7.png" alt=""></a></div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <a href="#">
+          <p>1234123</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
+        <a href="#">
+          <p>1234123</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
       </div>
-      <!-- 1楼 end  -->
-
-      <!-- 2楼 start  -->
-      <div class="w floor_2">
-        <div class="box_hd">
-          <h3>手机通讯</h3>
-          <div class="tab_list">
-            <ul>
-              <li><a href="#" class="style_red">热门</a>|</li>
-              <li><a href="#">大家电</a>|</li>
-              <li><a href="#">生活电器</a>|</li>
-              <li><a href="#">厨房电器</a>|</li>
-              <li><a href="#">个护健康</a>|</li>
-              <li><a href="#">应季电器</a>|</li>
-              <li><a href="#">空气/净水</a>|</li>
-              <li><a href="#">新奇特</a>|</li>
-              <li><a href="#">高端电器</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box_bd">
-          <div class="tab_content">
-            <div class="tab_list_item">
-              <div class="col_210">
-                <ul>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                </ul>
-                <a href="#"><img src="upload/floor-1-1.png" alt=""></a>
-              </div>
-              <div class="col_329"><a href="#"><img src="upload/floor-1-2.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-3.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-4.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-5.png" alt=""></a></div>
-              <div class="col_219"><a href="#"><img src="upload/floor-1-6.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-7.png" alt=""></a></div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <a href="#">
+          <p>1234123</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
+        <a href="#">
+          <p>1234123</p>
+          <span>Powerd by WeepEagle</span>
+        </a>
       </div>
-      <!-- 2楼 end  -->
-
-      <!-- 3楼 start  -->
-      <div class="w floor_3">
-        <div class="box_hd">
-          <h3>电脑办公</h3>
-          <div class="tab_list">
-            <ul>
-              <li><a href="#" class="style_red">热门</a>|</li>
-              <li><a href="#">大家电</a>|</li>
-              <li><a href="#">生活电器</a>|</li>
-              <li><a href="#">厨房电器</a>|</li>
-              <li><a href="#">个护健康</a>|</li>
-              <li><a href="#">应季电器</a>|</li>
-              <li><a href="#">空气/净水</a>|</li>
-              <li><a href="#">新奇特</a>|</li>
-              <li><a href="#">高端电器</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box_bd">
-          <div class="tab_content">
-            <div class="tab_list_item">
-              <div class="col_210">
-                <ul>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                  <li><a href="#">节能补贴</a></li>
-                </ul>
-                <a href="#"><img src="upload/floor-1-1.png" alt=""></a>
-              </div>
-              <div class="col_329"><a href="#"><img src="upload/floor-1-2.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-3.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-4.png" alt=""></a></div>
-              <div class="col_221"><a href="#"><img src="upload/floor-1-5.png" alt=""></a></div>
-              <div class="col_219"><a href="#"><img src="upload/floor-1-6.png" alt="" class="bb"></a><a href="#"><img src="upload/floor-1-7.png" alt=""></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 3楼 end  -->
-    </div>
-    <!-- 楼层区域制作 end -->
-
-    <!-- common_footer_start -->
-    <footer class="footer">
-      <div class="w">
-        <div class="mod_service">
-          <ul>
-            <li>
-              <h5 class="icon_1"></h5>
-              <div class="service_txt">
-                <h4>正品保障</h4>
-                <p>正品保障，提供发票</p>
-              </div>
-            </li>
-            <li>
-              <h5 class="icon_2"></h5>
-              <div class="service_txt">
-                <h4>极速物流</h4>
-                <p>急速物流，急速送达</p>
-              </div>
-            </li>
-            <li>
-              <h5 class="icon_3"></h5>
-              <div class="service_txt">
-                <h4>无忧售后</h4>
-                <p>7天无理由退换货</p>
-              </div>
-            </li>
-            <li>
-              <h5 class="icon_4"></h5>
-              <div class="service_txt">
-                <h4>帮助中心</h4>
-                <p>您的购物指南</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="mod_help">
-          <dl>
-            <dt>服务指南</dt>
-            <dd><a href="#">购物流程</a></dd>
-            <dd><a href="#">会员介绍</a></dd>
-            <dd><a href="#">生活旅行/团购</a></dd>
-            <dd><a href="#">常见问题</a></dd>
-            <dd><a href="#">联系客服</a></dd>
-          </dl>
-          <dl>
-            <dt>配送方式</dt>
-            <dd><a href="#">上门自提</a></dd>
-            <dd><a href="#">211限时达</a></dd>
-            <dd><a href="#">配送服务查询</a></dd>
-            <dd><a href="#">配送费收取标准</a></dd>
-            <dd><a href="#">海外配送</a></dd>
-          </dl>
-          <dl>
-            <dt>支付方式</dt>
-            <dd><a href="#">货到付款</a></dd>
-            <dd><a href="#">在线支付</a></dd>
-            <dd><a href="#">分期付款</a></dd>
-            <dd><a href="#">邮局汇款</a></dd>
-            <dd><a href="#">公司转账</a></dd>
-          </dl>
-          <dl>
-            <dt>售后服务</dt>
-            <dd><a href="#">售后政策</a></dd>
-            <dd><a href="#">价格保护</a></dd>
-            <dd><a href="#">退款说明</a></dd>
-            <dd><a href="#">返修/退换货</a></dd>
-            <dd><a href="#">取消订单</a></dd>
-          </dl>
-          <dl>
-            <dt>特色服务</dt>
-            <dd><a href="study/index.html">学成在线</a></dd>
-            <dd><a href="#">DIY装机</a></dd>
-            <dd><a href="#">延保服务</a></dd>
-            <dd><a href="#">品优购E卡</a></dd>
-            <dd><a href="h5_京东手机版/index.html">品优购手机版</a></dd>
-          </dl>
-          <dl>
-            <dt>帮助中心</dt>
-            <dd>
-              <img src="images/wx_cz.jpg" alt="" />
-              <p>品优购客户端</p>
-            </dd>
-          </dl>
-        </div>
-        <div class="mod_copyright">
-          <div class="links">
-            <a href="#">关于我们</a>| <a href="#">联系我们</a>|
-            <a href="#">联系客服</a>| <a href="#">商家入驻</a>|
-            <a href="#">营销中心</a>| <a href="#">手机品优购</a>|
-            <a href="#">友情链接</a>| <a href="#">销售联盟</a>|
-            <a href="#">品优购社区</a>| <a href="#">品优购公益</a>|
-            <a href="#">English Site</a>|
-            <a href="#">Contact U</a>
-          </div>
-          <div class="copyright">
-            地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096
-            电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br />
-            京ICP备08001421号京公网安备110108007702
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- common_footer_end -->
+    </section>
   </body>
 </html>
