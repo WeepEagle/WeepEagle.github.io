@@ -1,0 +1,111 @@
+//首页的样式文件 less 文件
+//在 index.less 中导入 common.less
+//@import "样式文件名（.less/.css 可省略）"
+@import "common";
+
+body {
+  position: relative;
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f2f2f2;
+  //   transition: all 0.5s;
+}
+
+//rem 值 = 元素大小 px（在750px下此元素为88px） / html元素大小 px（在750px下为50px）
+//此次开发是在 750px 下开发，所以html元素选取50px
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: -webkit-linear-gradient(top, #ffda47, #ffda47, #f2f2f2);
+  // margin-top: (88rem / @baseFont);
+  z-index: -10;
+}
+//顶部搜索框 固定
+@baseFont: 50rem;
+.search-content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: (88rem / @baseFont);
+  background-color: #ffdb47;
+  .classify {
+    width: (40rem / @baseFont);
+    height: (63rem / @baseFont);
+    background: url(../images/fenlei.png) no-repeat;
+    background-size: (40 / @baseFont) (63 / @baseFont);
+    margin: (11 / @baseFont) (25 / @baseFont) (7 / @baseFont) (24 / @baseFont);
+  }
+  .search {
+    flex: 1;
+    a {
+      display: block;
+      // 去掉蓝色边框
+      // outline: none;
+      line-height: (66 / @baseFont);
+      font-size: (25 / @baseFont);
+      color: #757575;
+      padding-left: (55 / @baseFont);
+      // width: 100%;
+      height: (66 / @baseFont);
+      border: 0;
+      border-radius: (33 / @baseFont);
+      background-color: #fff2cc;
+      margin-top: (12 / @baseFont);
+    }
+  }
+  .login {
+    width: (40 / @baseFont);
+    height: (63 / @baseFont);
+    background: url(../images/denlu.png) no-repeat;
+    background-size: (40 / @baseFont) (63 / @baseFont);
+    margin: (10 / @baseFont) (25 / @baseFont) (10 / @baseFont) (25 / @baseFont);
+  }
+}
+.banner {
+  width: (714 / @baseFont);
+  height: (368 / @baseFont);
+  margin: 0 auto;
+  border-radius: (15 / @baseFont);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.ad {
+  display: flex;
+  a {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+.nav {
+  width: (750 / @baseFont);
+  a {
+    float: left;
+    width: (150 / @baseFont);
+    height: (140 / @baseFont);
+    text-align: center;
+    img {
+      display: block;
+      width: (82 / @baseFont);
+      height: (82 / @baseFont);
+      margin: (10 / @baseFont) auto 0;
+    }
+    p {
+      font-size: (22 / @baseFont);
+    }
+  }
+}

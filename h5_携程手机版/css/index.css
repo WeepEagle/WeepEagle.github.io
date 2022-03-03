@@ -1,0 +1,412 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tanoma, "Lucida Grande", Verdana, "Microsoft Yahei",
+    STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  /* 系统不建议使用 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* 搜索模块 */
+.search-index {
+  display: flex;
+  /* 固定定位和父级没有关系,他以屏幕为准 */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 固定定位的盒子应该有宽度 */
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  height: 44px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 10;
+}
+.search {
+  flex: 1;
+  position: relative;
+  vertical-align: bottom;
+  height: 26px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #666;
+  line-height: 24px;
+  margin: 8px 3px 8px 10px;
+  padding-left: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/tabbar.png) no-repeat -2px -2px;
+  background-size: 20px auto;
+}
+.user {
+  width: 44px;
+  height: 44px;
+  /* background-color: #e2f779; */
+  font-size: 12px;
+  /* color: #2eaae0; */
+  color: #666;
+  text-align: center;
+}
+.user::before {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 23px;
+  background: url(../images/tabbar.png) no-repeat -4px -92px;
+  background-size: 30px auto;
+  margin: 3px auto -1px;
+}
+/* 焦点图 */
+.focus {
+  margin-top: 44px;
+}
+.focus img {
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 8px 8px;
+}
+/* 局部导航栏 */
+.local-nav {
+  display: flex;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.local-nav li {
+  flex: 1;
+}
+.local-nav a {
+  display: flex;
+  /* 主轴设置为Y轴 */
+  /* 给父亲加 */
+  flex-direction: column;
+  /* 侧轴排列方式为center */
+  align-items: center;
+  font-size: 12px;
+}
+/* .local-nav-icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin-top: 9px;
+  background: url(../images/icon.png) no-repeat -2px -3px;
+  background-size: 35px auto;
+} */
+
+.local-nav li [class="local-nav-icon"] {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin-top: 9px;
+  background: url(../images/icon.png) no-repeat -2px -3px;
+  background-size: 35px auto;
+}
+
+.local-nav li:nth-child(2) .local-nav-icon {
+  background-position: -2px -37px;
+}
+.local-nav li:nth-child(3) .local-nav-icon {
+  background-position: -2px -71px;
+}
+.local-nav li:nth-child(4) .local-nav-icon {
+  background-position: -2px -104px;
+}
+.local-nav li:nth-child(5) .local-nav-icon {
+  background-position: -2px -140px;
+}
+nav {
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 5px 0px;
+  color: #fff;
+}
+.nav-common {
+  display: flex;
+  height: 88px;
+  /* background-color: #7ca1c7; */
+}
+.nav-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.nav-items a {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-items a span {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 60px;
+  height: 57px;
+  background-color: rgb(169, 54, 54);
+  background: url(../images/mainnav.png) no-repeat;
+  background-size: 60px auto;
+}
+.nav-common:nth-child(1) .nav-items a span {
+  background-position: 0 -178px;
+}
+.nav-common:nth-child(2) .nav-items a span {
+  background-position: 0 -361px;
+}
+.nav-common:nth-child(3) .nav-items a span {
+  background-position: 0 -301px;
+}
+.nav-items a:nth-child(1) {
+  border-bottom: 1px solid #f2f2f2;
+}
+.nav-common .nav-items:nth-child(1) a {
+  border: 0;
+}
+.nav-common:nth-child(2) {
+  margin: 2px 0px;
+}
+.nav-items:nth-child(-n + 2) {
+  border-right: 1px solid #f2f2f2;
+}
+.nav-common:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+.nav-common:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+.nav-common:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+/* 侧导航栏 */
+.subnav-entry {
+  display: flex;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.subnav-entry li {
+  /* 相对于父级的宽度 */
+  flex: 20%;
+}
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subnav-entry-icon {
+  width: 28px;
+  height: 28px;
+  background-color: #324367;
+  margin-top: 4px;
+  background: url(../images/mainnav.png) no-repeat;
+  background-size: 28px auto;
+}
+.subnav-entry li:nth-child(1) .subnav-entry-icon {
+  background-position: 3px 0px;
+}
+.subnav-entry li:nth-child(2) .subnav-entry-icon {
+  background-position: 0px -393px;
+}
+.subnav-entry li:nth-child(3) .subnav-entry-icon {
+  background-position: 0px -337px;
+}
+.subnav-entry li:nth-child(4) .subnav-entry-icon {
+  background-position: 0px -55px;
+}
+.subnav-entry li:nth-child(5) .subnav-entry-icon {
+  background-position: 0px -224px;
+}
+.subnav-entry li:nth-child(6) .subnav-entry-icon {
+  background-position: 0px -197px;
+}
+.subnav-entry li:nth-child(7) .subnav-entry-icon {
+  background-position: 0px -114px;
+}
+.subnav-entry li:nth-child(8) .subnav-entry-icon {
+  background-position: 0px -281px;
+}
+.subnav-entry li:nth-child(9) .subnav-entry-icon {
+  background-position: 0px -253px;
+}
+.subnav-entry li:nth-child(10) .subnav-entry-icon {
+  background-position: 0px -308px;
+}
+.sales-box {
+  border-top: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+.sales-hd {
+  position: relative;
+  height: 44px;
+  border-bottom: 1px solid #eee;
+}
+.sales-hd h2 {
+  text-indent: -999px;
+  overflow: hidden;
+}
+.sales-hd h2::after {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  content: "";
+  width: 79px;
+  height: 22px;
+  background: url(../images/sales-hd.png);
+  background-size: 100% 100%;
+}
+.sales-hd .more {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* font-size: 12px; */
+  color: white;
+  padding: 1px 20px 1px 10px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+}
+.more::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.row a {
+  flex: 1;
+}
+.row a:nth-child(1) {
+  border-right: 1px solid #eee;
+}
+.row a img {
+  width: 100%;
+}
+
+.load ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  /* background-color: #45ff23; */
+}
+.load ul li {
+  /* flex: 1; */
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.load ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+.load ul li select {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 102px;
+  height: 32px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+.infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+.infor p {
+  margin: 5px;
+}
+.infor p a {
+  margin:  0 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  height: 50px;
+  background-color: #fff;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer ul li {
+  flex: 1;
+}
+.footer ul li a {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  padding: 2px 0;
+}
+.footer ul li a span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  background: url(../images/tabbar.png) no-repeat;
+  background-size: 30px auto;
+}
+.footer ul li:nth-child(1) a span {
+  background-position: 0 0;
+}
+.footer ul li:nth-child(2) a span {
+  background-position: 0 -30px;
+}
+.footer ul li:nth-child(3) a span {
+  background-position: 0 -60px;
+}
+.footer ul li:nth-child(4) a span {
+  background-position: 0 -88px;
+}
