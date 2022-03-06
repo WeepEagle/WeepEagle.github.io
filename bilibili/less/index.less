@@ -1,0 +1,175 @@
+// ============== 公用样式  ==================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular,
+    Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// =============== 布局样式  ================
+// 约定 iphone6 375px 为基准设备   1vw = 3.75px
+// ************背景**************************背景**************************背景**************************背景**************
+.body {
+  position: relative;
+}
+.suspension-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+.m-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.2vw 0 4.8vw;
+  width: 100%;
+  height: 10.6667vw;
+  background-color: #fff;
+  .logo i {
+    color: #fb7299;
+    font-size: 6.9333vw;
+  }
+  .right {
+    display: flex;
+  }
+  .search i {
+    font-size: 5.8667vw;
+    color: #ccc;
+    margin-right: 5.8667vw;
+  }
+  .user {
+    display: block;
+    width: 6.4vw;
+    height: 6.4vw;
+    margin-right: 6.4vw;
+    img {
+      width: 100%;
+      height: 100%;
+      border: 0.2667vw solid #fff;
+      border-radius: 50%;
+    }
+  }
+  .app {
+    // display: block;
+    width: 19.2vw;
+    height: 6.4vw;
+  }
+}
+.nav {
+  display: flex;
+  width: 100vw;
+  height: 11vw;
+  // background-color: rgb(177, 45, 45);
+  border-bottom: 1px solid #eee;
+  a {
+    display: block;
+    width: (100/6vw);
+    height: 100%;
+    margin: 0 3vw;
+    background-color: #fff;
+    font-size: 3.6vw;
+    line-height: 13vw;
+    text-align: center;
+
+    &:hover {
+      border-bottom: 0.6vw solid #fb7299;
+      color: #fb7299;
+    }
+  }
+}
+// ************video**************************video**************************video**************************video**************************video**************
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22vw;
+  padding: 0 1vw;
+  div {
+    width: 47.4vw;
+    height: 38vw;
+    padding: 2vw 1.5vw;
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      .count {
+        position: absolute;
+        left: 0vw;
+        bottom: 10vw;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 7vw;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0)
+        );
+        padding: 1.3333vw 1.3333vw;
+        span {
+          color: #fff;
+          font-size: 3.3vw;
+        }
+      }
+      img {
+        width: 100%;
+        height: 24vw;
+        border-radius: 0.5vw;
+      }
+      p {
+        margin-top: 1.28vw;
+        font-size: 3.3vw;
+      }
+      &:nth-child(2n) {
+        margin-left: 2vw;
+      }
+    }
+  }
+}
+// ************openapp**************************openapp**************************openapp**************************openapp**************************openapp**************
+.openapp {
+  position: fixed;
+  bottom: 7.5vw;
+  left: 0;
+  margin: 0 2vw;
+  padding: 1.7vw 17vw;
+  width: 93vw;
+  height: 9.5vw;
+  font-size: 3.6vw;
+  color: #fff;
+  border-radius: 5vw;
+  background-color: #fb7299;
+  i {
+    font-size: 5vw;
+  }
+}
