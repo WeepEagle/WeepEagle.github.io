@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var num_yve = 100;
+      var num_cunqian = 0;
+      var num_qvqian = 0;
+      while (1) {
+        var num = prompt(
+          "请输入您要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出"
+        );
+        switch (parseInt(num)) {
+          case 1:
+            while (1) {
+              num_cunqian = parseInt(prompt("请输入您要存的钱数:"));
+              if (num_cunqian % 100 == 0 && num_cunqian >= 100) {
+                num_yve = num_yve + num_cunqian;
+                alert("存钱成功,您现在余额:" + num_yve + "元");
+                break;
+              } else {
+                alert("此ATM只能存取100元的人民币.");
+              }
+            }
+            break;
+          case 2:
+            while (1) {
+              num_qvqian = parseInt(prompt("请输入您要取的钱数:"));
+              if (num_qvqian % 100 == 0 && num_qvqian >= 100) {
+                if (num_yve >= num_qvqian) {
+                  num_yve = num_yve - num_qvqian;
+                  alert("取钱成功,您现在余额:" + num_yve + "元");
+                  break;
+                } else {
+                  alert("您余额不足.");
+                  break;
+                }
+              } else {
+                alert("此ATM只能存取100元的人民币.");
+              }
+            }
+            break;
+          case 3:
+            alert("您现在余额:" + num_yve + "元");
+            break;
+
+          case 4:
+            break;
+
+          default:
+            alert("输入错误,请重新输入.");
+            break;
+        }
+        if (parseInt(num) == 4) {
+          break;
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
