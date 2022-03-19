@@ -7,11 +7,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
     />
+    <!-- user-scalable=0  可以解决移动端的点击300ms延时问题,是为了禁用双击缩放 -->
     <title>携程在手,说走就走</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <script src="js/fastclick.js"></script>
   </head>
   <body>
+    <!-- goback -->
+    <div class="goBack"></div>
     <!-- 顶部搜索 -->
     <div class="search-index">
       <div class="search">搜索:目的地/酒店/景点/航班号</div>
@@ -19,7 +24,19 @@
     </div>
     <!-- 焦点图 -->
     <div class="focus">
-      <img src="upload/0zg2w120009bmdtzsB75A.jpg" alt="" />
+      <ul>
+        <li><img src="upload/upload3.jpg" alt="" /></li>
+        <li><img src="upload/upload1.jpg" alt="" /></li>
+        <li><img src="upload/upload2.jpg" alt="" /></li>
+        <li><img src="upload/upload3.jpg" alt="" /></li>
+        <li><img src="upload/upload1.jpg" alt="" /></li>
+      </ul>
+      <!-- 点点 -->
+      <ol>
+        <li class="current"></li>
+        <li></li>
+        <li></li>
+      </ol>
     </div>
     <!-- 局部导航栏 -->
     <ul class="local-nav">
@@ -238,5 +255,17 @@
         </li>
       </ul>
     </footer>
+    <script>
+      // 解决click 延时300毫秒的问题
+      if ("addEventListener" in document) {
+        document.addEventListener(
+          "DOMContentLoaded",
+          function () {
+            FastClick.attach(document.body);
+          },
+          false
+        );
+      }
+    </script>
   </body>
 </html>
