@@ -63,6 +63,11 @@ a {
     font-size: 50px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   position: relative;
   min-width: 320px;
@@ -77,9 +82,19 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 7.4rem;
   background: -webkit-linear-gradient(top, #ffda47, #ffda47, #f2f2f2);
   z-index: -10;
+}
+.goBack {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/top.png);
+  background-size: 100% auto;
+  z-index: 60;
 }
 .search-content {
   display: flex;
@@ -90,6 +105,7 @@ body {
   width: 15rem;
   height: 1.76rem;
   background-color: #ffdb47;
+  z-index: 50;
 }
 .search-content .classify {
   width: 0.8rem;
@@ -120,16 +136,46 @@ body {
   background-size: 0.8rem 1.26rem;
   margin: 0.2rem 0.5rem 0.2rem 0.5rem;
 }
-.banner {
+.focus {
+  position: relative;
   width: 14.28rem;
   height: 7.36rem;
   margin: 0 auto;
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.banner img {
+.focus ul {
+  width: 99.96rem;
+  height: 100%;
+  z-index: 0;
+}
+.focus ul li {
+  float: left;
+  width: 14.28rem;
+  height: 100%;
+}
+.focus ul li img {
   width: 100%;
   height: 100%;
+}
+.focus ol {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  padding: 0.05rem 0 0.05rem 0.05rem;
+}
+.focus ol li {
+  float: left;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  margin-right: 0.1rem;
+  transition: all 0.5s;
+  background-color: #ffffff;
+}
+.focus ol .current {
+  width: 0.4rem;
+  /* background-color: rgb(255, 0, 0); */
 }
 .ad {
   display: flex;
@@ -142,6 +188,7 @@ body {
 }
 .nav {
   width: 15rem;
+  overflow: hidden;
 }
 .nav a {
   float: left;
@@ -157,4 +204,72 @@ body {
 }
 .nav a p {
   font-size: 0.44rem;
+}
+.text {
+  width: 15rem;
+  height: 1.6rem;
+  background: url("../upload/text.png") no-repeat -0.06rem 0;
+  background-size: 101% 100%;
+}
+.fast {
+  display: flex;
+  width: 14.28rem;
+  height: 10rem;
+  margin: 0.34rem 0.38rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+}
+.fast div {
+  flex: 1;
+  padding: 0.3rem;
+}
+.fast div:nth-child(1) {
+  border-right: 1px solid #f2f2f2;
+}
+.fast div p {
+  font-size: 0.5rem;
+}
+.fast div a {
+  float: left;
+  width: 3rem;
+  height: 3.4rem;
+  background-color: #fff;
+  margin: 0.22rem 0.12rem;
+}
+.fast div a img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 0.3rem;
+}
+.fast div a p {
+  margin-top: -0.3rem;
+  color: tomato;
+  text-align: center;
+}
+.caicai_hd {
+  width: 14.28rem;
+  height: 1rem;
+  margin: 0.34rem 0.38rem;
+  background: url(../images/caicai.webp) no-repeat;
+  background-size: 100%;
+}
+.caicai_bd {
+  width: 14.28rem;
+  height: 40rem;
+  margin: 0.34rem 0.38rem;
+}
+.caicai_bd div {
+  float: left;
+  width: 7rem;
+  height: 11rem;
+  margin-bottom: 0.34rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.caicai_bd div:nth-child(2n-1) {
+  margin-right: 0.28rem;
+}
+.caicai_bd div img {
+  width: 100%;
+  height: 100%;
 }

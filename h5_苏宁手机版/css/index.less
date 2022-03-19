@@ -2,7 +2,11 @@
 //在 index.less 中导入 common.less
 //@import "样式文件名（.less/.css 可省略）"
 @import "common";
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   position: relative;
   min-width: 320px;
@@ -21,13 +25,23 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: (370rem / @baseFont);
   background: -webkit-linear-gradient(top, #ffda47, #ffda47, #f2f2f2);
   // margin-top: (88rem / @baseFont);
   z-index: -10;
 }
 //顶部搜索框 固定
 @baseFont: 50rem;
+.goBack {
+  position: fixed;
+  right: (40rem / @baseFont);
+  bottom: (200rem / @baseFont);
+  width: (100rem / @baseFont);
+  height: (100rem / @baseFont);
+  background: url(../images/top.png);
+  background-size: 100% auto;
+  z-index: 60;
+}
 .search-content {
   display: flex;
   position: fixed;
@@ -37,6 +51,7 @@ body {
   width: 15rem;
   height: (88rem / @baseFont);
   background-color: #ffdb47;
+  z-index: 50;
   .classify {
     width: (40rem / @baseFont);
     height: (63rem / @baseFont);
@@ -70,18 +85,49 @@ body {
     margin: (10 / @baseFont) (25 / @baseFont) (10 / @baseFont) (25 / @baseFont);
   }
 }
-.banner {
+.focus {
+  position: relative;
   width: (714 / @baseFont);
   height: (368 / @baseFont);
   margin: 0 auto;
   border-radius: (15 / @baseFont);
   overflow: hidden;
-
-  img {
-    width: 100%;
+  ul {
+    width: (7 * 714 / @baseFont);
     height: 100%;
+    z-index: 0;
+    li {
+      float: left;
+      width: (714 / @baseFont);
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  ol {
+    position: absolute;
+    bottom: (10 / @baseFont);
+    right: (10 / @baseFont);
+    padding: (2.5 / @baseFont) 0 (2.5 / @baseFont) (2.5 / @baseFont);
+    li {
+      float: left;
+      width: (10 / @baseFont);
+      height: (10 / @baseFont);
+      border-radius: (5 / @baseFont);
+      margin-right: (5 / @baseFont);
+      transition: all 0.5s;
+      background-color: #ffffff;
+    }
+    .current {
+      width: (20 / @baseFont);
+      /* background-color: rgb(255, 0, 0); */
+    }
   }
 }
+//////////////////////////////////
+///////////////////////////////
 .ad {
   display: flex;
   a {
@@ -106,6 +152,80 @@ body {
     }
     p {
       font-size: (22 / @baseFont);
+      // overflow: hidden;
+    }
+  }
+  overflow: hidden;
+}
+.text {
+  width: (750 / @baseFont);
+  height: (80 / @baseFont);
+  background: url("../upload/text.png") no-repeat (-3 / @baseFont) 0;
+  background-size: 101% 100%;
+  // background-color: rgb(0, 0, 0);
+}
+.fast {
+  display: flex;
+  width: (714 / @baseFont);
+  height: (500 / @baseFont);
+  margin: (17 / @baseFont) (19 / @baseFont);
+  background-color: rgb(255, 255, 255);
+  border-radius: (15 / @baseFont);
+  div {
+    flex: 1;
+    padding: (15 / @baseFont);
+    &:nth-child(1) {
+      border-right: 1px solid #f2f2f2;
+    }
+    p {
+      font-size: (25 / @baseFont);
+    }
+    a {
+      float: left;
+      width: (150 / @baseFont);
+      height: (170 / @baseFont);
+      background-color: #fff;
+      margin: (11 / @baseFont) (6 / @baseFont);
+      // padding: 0;
+      img {
+        width: (120 / @baseFont);
+        height: (120 / @baseFont);
+        margin: 0 (15 / @baseFont);
+        // background-color: rgb(112, 89, 89);
+      }
+      p {
+        margin-top: -(15 / @baseFont);
+        color: tomato;
+        text-align: center;
+      }
+    }
+  }
+}
+.caicai_hd {
+  width: (714 / @baseFont);
+  height: (50 / @baseFont);
+  margin: (17 / @baseFont) (19 / @baseFont);
+  background: url(../images/caicai.webp) no-repeat;
+  background-size: 100%;
+  // background-color: rgb(172, 44, 44);
+}
+.caicai_bd {
+  width: (714 / @baseFont);
+  height: (2000 / @baseFont);
+  margin: (17 / @baseFont) (19 / @baseFont);
+  div {
+    float: left;
+    width: (350 / @baseFont);
+    height: (550 / @baseFont);
+    margin-bottom: (17 / @baseFont);
+    border-radius: (15 / @baseFont);
+    overflow: hidden;
+    &:nth-child(2n-1) {
+      margin-right: (14 / @baseFont);
+    }
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
