@@ -9,6 +9,12 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
     <title>手机京东</title>
   </head>
   <body>
@@ -34,8 +40,23 @@
     <div class="main-content">
       <!-- 滑动图 -->
       <div class="slider">
-        <img src="upload/gg2.jpg" alt="" />
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="upload/gg6.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg5.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg4.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg3.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="upload/gg33.png" alt="" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
+
       <!-- 蔡康永品牌日 -->
       <div class="brand">
         <div>
@@ -138,7 +159,6 @@
         <div class="app_m">
           <a href="../index.html">打开电脑端</a>
         </div>
-
       </footer>
     </div>
   </body>
